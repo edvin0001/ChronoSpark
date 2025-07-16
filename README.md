@@ -18,7 +18,8 @@ ChronoSpark is a sleek and lightweight stopwatch web app built to measure time w
 
 ## 📸 Preview
 
-*(Insert a screenshot or GIF here if available)*
+### <img width="1919" height="907" alt="image" src="https://github.com/user-attachments/assets/fbc1eada-60c2-4398-b8e9-bbcc60c7c3ef" />
+
 
 ## 📦 Installation
 
