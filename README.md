@@ -20,7 +20,9 @@ ChronoSpark is a sleek and lightweight stopwatch web app built to measure time w
 
   ### With Day Mode Toggle:
   <img width="1919" height="914" alt="image" src="https://github.com/user-attachments/assets/a20005ee-01ac-419d-aa09-d03a5df23fe5" />
+  
   ### With Night Mode Toggle:
+  
   <img width="1919" height="906" alt="image" src="https://github.com/user-attachments/assets/2066d15e-4caf-415b-b35b-3171b629cba5" />
 
       
