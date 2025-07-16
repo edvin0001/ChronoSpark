@@ -15,6 +15,7 @@ if (isNight) {
         el.style.color = "black"
     })
     container.style.border = "2px solid white";
+    document.querySelector(".title").style.color: "white"
 } else {
     Button.classList.add("bg_day");
     document.body.style.backgroundColor = "rgba(255, 255, 255, 1)"
@@ -24,6 +25,7 @@ if (isNight) {
     })
 
     container.style.border = "2px solid rgba(255, 255, 255, 1)";
+    document.querySelector(".title").style.color : "black"
 }
 Button.addEventListener("click", function () {
     isNight = localStorage.getItem("mode") === "night";
