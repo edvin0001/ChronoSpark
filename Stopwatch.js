@@ -61,37 +61,32 @@ let seconds = 0
 let milliseconds = 0
 let isRunning = false
 function getsUpdated() {
-    isRunning = true
-    console.log(hour, minute, seconds, milliseconds)
+    isRunning = true;
     Interval = setInterval(() => {
-        milliseconds++
+        milliseconds++;
         if (milliseconds > 99) {
-            milliseconds = 0
-            seconds++
+            milliseconds = 0;
+            seconds++;
         }
-        if (seconds > 0) {
+        if (seconds > 59) {
+            seconds = 0;
+            minute++;
+        }
+        if (minute > 59) {
+            minute = 0;
+            hour++;
+        }
+        if (hour > 23) {
+            hour = 0;
+        }
 
-            setInterval(() => {
-                if (seconds > 59) {
-                    seconds = 0
-                    minute++
-                }
-                if (minute > 59) {
-                    minute = 0
-                    hour++
-                }
-                if (hour > 23) {
-                    hour = 0
-                }
-            }, 1000);
-        }
-        document.getElementsByClassName("milliseconds")[0].innerHTML = milliseconds < 10 ? `0${milliseconds}` : `${milliseconds}`
-        document.getElementsByClassName("seconds")[0].innerHTML = seconds < 10 ? `0${seconds}` : `${seconds}`
-        document.getElementsByClassName("minute")[0].innerHTML = minute < 10 ? `0${minute}` : `${minute}`
-        document.getElementsByClassName("hour")[0].innerHTML = hour < 10 ? `0${hour}` : `${hour}`
+        document.getElementsByClassName("milliseconds")[0].innerHTML = milliseconds < 10 ? `0${milliseconds}` : `${milliseconds}`;
+        document.getElementsByClassName("seconds")[0].innerHTML = seconds < 10 ? `0${seconds}` : `${seconds}`;
+        document.getElementsByClassName("minute")[0].innerHTML = minute < 10 ? `0${minute}` : `${minute}`;
+        document.getElementsByClassName("hour")[0].innerHTML = hour < 10 ? `0${hour}` : `${hour}`;
     }, 10);
-
 }
+
 
 document.getElementsByClassName("start")[0].addEventListener("click", function () {
     console.log("Start :", isRunning)
