@@ -5,9 +5,7 @@ ChronoSpark is a sleek and lightweight stopwatch web app built to measure time w
 ## 🚀 Features
 
 - Start, stop, and reset functionality
-- Lap tracking (if implemented)
 - Responsive and modern UI
-- Keyboard shortcuts (optional)
 - LocalStorage support (optional)
 
 ## 🛠️ Tech Stack
@@ -32,5 +30,5 @@ ChronoSpark is a sleek and lightweight stopwatch web app built to measure time w
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/chronospark.git
+git clone https://github.com/edvin0001/chronospark.git
 cd chronospark
